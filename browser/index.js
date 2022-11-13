@@ -35,7 +35,7 @@ const appEnter = nextRouterState => {
     store.dispatch(setIdeas(ideas));
     store.dispatch(setMeetings(meetings));
   })
-  .catch(console.error.bind(console));
+  .catch(console.error.bind(console)); //?
 }
 
 const singleMinionEnter = nextRouterState => {
@@ -93,6 +93,7 @@ const allIdeasEnter = () => {
   store.dispatch(resetEditingState())
 }
 
+//use react router to determine the render of components
 ReactDOM.render(
   <Provider store={store}>
     <Router history={hashHistory}>

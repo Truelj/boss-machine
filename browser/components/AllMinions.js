@@ -39,7 +39,7 @@ const AllMinions = props => {
       </div>
     </div>
   )
-}
+}//end of AllMinions function
 
 const mapState = ({minions}) => ({
   minions

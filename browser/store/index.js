@@ -1,6 +1,6 @@
 import { createStore, combineReducers, applyMiddleware, compose } from 'redux';
 import thunks from 'redux-thunk';
-
+//import slice reducers
 import minions from './minions';
 import meetings from './meetings';
 import ideas from './ideas';
@@ -16,8 +16,10 @@ const store = createStore(
     minions,
     meetings,
     ideas,
+
     selectedMinion,
     selectedIdea,
+
     work,
     appState,
   }),
